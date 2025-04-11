@@ -3,8 +3,11 @@ const express = require('express');
 const multer = require('multer');
 const { transcribeAudio } = require('./services/transcriber');
 const { exec } = require('child_process');
+const bodyParser = require('body-parser');
 
 const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json())
 const upload = multer({ dest: 'uploads/' });
 
 app.post('/transcribe', upload.single('audio'), async (req, res) => {
@@ -19,6 +22,10 @@ app.post('/transcribe', upload.single('audio'), async (req, res) => {
     console.error('Error in transcription:', error);
     res.status(500).json({ error: error.message });
   }
+});
+
+app.get('/', async (req, res) => {
+  res.status(200).json({ "status": "OK!" });
 });
 
 const port = 3000;
