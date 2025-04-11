@@ -42,6 +42,8 @@ const whisper = spawn('whisper', args);
 
 ### Starting the Server
 ```
+git clone https://github.com/nikhil-here/quicktrim-api
+cd quicktrim-api
 npm install 
 node index.js
 ```
