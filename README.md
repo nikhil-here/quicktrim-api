@@ -45,6 +45,7 @@ const whisper = spawn('whisper', args);
 git clone https://github.com/nikhil-here/quicktrim-api
 cd quicktrim-api
 npm install 
+pip install -U openai-whisper
 node index.js
 ```
 
