@@ -1,0 +1,16 @@
+1
+00:00:00,000 --> 00:00:11,000
+So overall we gone through the ExoPlayer internals, based on the internals we decide the preload operations that we should do to achieve the happiness data.
+
+2
+00:00:11,000 --> 00:00:17,000
+Then we look into some code and we also experience some ExoPlayer implementation.
+
+3
+00:00:17,000 --> 00:00:23,000
+ExoPlayer with no preloading, ExoPlayer playlist, ExoPlayer playlist with preload manager.
+
+4
+00:00:23,000 --> 00:00:30,000
+And at the end we also gone through the perpetual traces of all this implementation as well.
+

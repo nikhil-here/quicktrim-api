@@ -1,0 +1,21 @@
+{
+  "name": "quicktrim-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "express": "^5.1.0",
+    "multer": "^1.4.5-lts.2",
+    "srt-parser-2": "^1.2.3",
+    "subtitle": "^4.2.2-alpha.0",
+    "uuid": "^11.1.0"
+  }
+}
